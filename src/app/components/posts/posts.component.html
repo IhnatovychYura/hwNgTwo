@@ -1,0 +1,5 @@
+<h1>HW Two</h1>
+<div *ngFor="let singlePost of posts">
+  <app-post [post]="singlePost" (bubbleUp)="getBubble($event)"></app-post>
+</div>
+<h2>{{singlePost?.body}}</h2>
